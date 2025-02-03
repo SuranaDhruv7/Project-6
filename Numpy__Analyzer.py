@@ -22,7 +22,7 @@ class DataAnalytics:
         cols = int(input("Enter the number of columns: "))
         print(f"Enter {rows*cols} elements for the array: ")
         l = [int(input("Enter elem: ")) for i in range(rows*cols)]
-        array = np.array(l).reshape(2, rows, cols)
+        array = np.array(l).reshape(rows, cols)
         a = []
         a.append(array)
         return np.array(a)
